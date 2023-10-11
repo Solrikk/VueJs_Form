@@ -1,0 +1,17 @@
+<head>
+  <title>Vue.js Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <div class="form-container">
+      <h1>{{ message }}</h1>
+      <input v-model="name" placeholder="Enter your name">
+      <button @click="sayHello">Hello</button>
+      <p v-if="showGreeting">{{ greeting }}</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
